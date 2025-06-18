@@ -1,0 +1,41 @@
+body {
+    background: #ffe0f7;
+    color: #e6007a;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#gameCanvas {
+    background: #fff0fa;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #e6007a55;
+    border: 3px solid #e6007a;
+}
+#instructions {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #e6007a;
+}
+#difficulty-menu {
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#difficulty, #start-btn {
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+#start-btn {
+    background: #e6007a;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#start-btn:hover {
+    background: #b8005a;
+}
