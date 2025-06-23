@@ -3,46 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping Pong Game</title>
+    <title>Beer Pong Game</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 style="font-family: 'Pacifico', cursive; color: #e6007a; font-size: 2.7em; letter-spacing: 2px; margin-bottom: 0.2em; text-shadow: 0 2px 12px #ffb6e6;">Ping Pong Game</h1>
+    <h1 style="font-family: 'Pacifico', cursive; color: #e6007a; font-size: 2.7em; letter-spacing: 2px; margin-bottom: 0.2em; text-shadow: 0 2px 12px #ffb6e6;">Beer Pong Game</h1>
     <div id="difficulty-menu">
         <div id="game-instructions" style="max-width: 600px; margin: 0 auto 18px auto; background: #fff0fa; border: 2px solid #e6007a; border-radius: 14px; color: #e6007a; padding: 18px; font-size: 1.1em; font-family: 'Quicksand', Arial, sans-serif; box-shadow: 0 4px 24px #ffb6e655;">
             <b style="font-size:1.2em; font-family: 'Pacifico', cursive; color: #e6007a;">How to Play:</b><br>
             <ul style="text-align:left; margin: 10px 0 0 20px; font-family: 'Quicksand', Arial, sans-serif;">
                 <li>Click where you want to throw the ball. The ball will be launched toward that point.</li>
-                <li>Try to land the ball in all the cups arranged in a pyramid. The number of cups and their spacing increases with difficulty.</li>
-                <li>A <b>fan</b> (wind) will push your ball left or right each throw. Watch the wind indicator and fan animation!</li>
-                <li>A moving <b>bomb</b> obstacle travels horizontally near the bottom. If your ball touches the bomb, the game will restart!</li>
-                <li>Collect <b>power-ups</b> for special effects!</li>
-                <li>Unlock <b>achievements</b> for special feats!</li>
-                <li>Try <b>Timed Mode</b> for an extra challenge!</li>
-                <li>Enjoy animated cups when you score!</li>
+                <li>Try to land the ball in all the red cups arranged in a pyramid.</li>
+                <li>A fan (wind) will push your ball left or right each throw. Watch the wind indicator!</li>
+                <li>A moving obstacle travels horizontally near the bottom. If your ball touches it, the game will restart!</li>
+                <li>Enjoy simple beer pong fun!</li>
             </ul>
             <div style="margin-top:10px; font-size:0.98em; font-family: 'Pacifico', cursive; color: #ff69b4;">Good luck and have fun!</div>
         </div>
-        <label for="difficulty" style="font-family: 'Quicksand', Arial, sans-serif;">Select Difficulty: </label>
-        <select id="difficulty" style="font-family: 'Quicksand', Arial, sans-serif;">
-            <option value="easy">Easy</option>
-            <option value="medium" selected>Medium</option>
-            <option value="hard">Hard</option>
-        </select>
-        <label for="map" style="margin-left:15px; font-family: 'Quicksand', Arial, sans-serif;">Select Map: </label>
-        <select id="map" style="font-family: 'Quicksand', Arial, sans-serif;">
-            <option value="hearts">Hearts</option>
-            <option value="stars">Stars</option>
-            <option value="bows">Bows</option>
-            <option value="sparkles">Sparkles</option>
-        </select>
-        <label for="throwSpeed" style="margin-left:15px; font-family: 'Quicksand', Arial, sans-serif;">Throw Speed: </label>
-        <input type="range" id="throwSpeed" min="8" max="22" value="15" style="vertical-align:middle; accent-color:#e6007a;">
-        <span id="throwSpeedValue" style="font-family: 'Quicksand', Arial, sans-serif; color:#e6007a; font-weight:bold;">15</span>
-        <label for="timedMode" style="margin-left:15px; font-family: 'Quicksand', Arial, sans-serif;">Timed Mode: </label>
-        <input type="checkbox" id="timedMode" style="vertical-align:middle; accent-color:#e6007a;">
         <button id="start-btn" style="font-family: 'Pacifico', cursive; font-size: 1.1em;">Start Game</button>
+        <button id="restart-btn" style="font-family: 'Pacifico', cursive; font-size: 1.1em; margin-left:10px; display:none;">Restart Game</button>
     </div>
     <canvas id="gameCanvas" width="600" height="600" style="display:none;"></canvas>
     <div id="instructions">
