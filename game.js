@@ -265,3 +265,9 @@ restartBtn.onclick = function() {
 };
 
 gameLoop();
+
+window.onload = function() {
+    // Ensure canvas size is set correctly for GitHub Pages
+    canvas.width = 600;
+    canvas.height = 600;
+};
